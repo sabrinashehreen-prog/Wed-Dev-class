@@ -1,0 +1,30 @@
+<button onclick="toggleMenu()">☰</button>
+
+<nav id="menu" style="display:none;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+</nav>
+
+<script>
+function toggleMenu() {
+    let menu = document.getElementById("menu");
+    if (menu.style.display === "none") {
+        menu.style.display = "block";
+    } else {
+        menu.style.display = "none";
+    }
+}
+</script>
+<button onclick="toggleContent()">Show More</button>
+
+<div id="extra" style="display:none;">
+    <p>More information about our mission!</p>
+</div>
+
+<script>
+function toggleContent() {
+    let content = document.getElementById("extra");
+    content.style.display =
+        content.style.display === "none" ? "block" : "none";
+}
+</script>
